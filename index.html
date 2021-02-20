@@ -8,7 +8,87 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
+    <div class="section-hero d-flex justify-content-center align-items-center">
+        <div class="section-hero__calculator-container">
+            <div class="container">
+                <div class="calculator-container__input-container m-3">
+                    <textarea name="" id="display" cols="40" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="container">
+                <div class="calculator-container__back-button d-flex justify-content-end">
+                    <div class="calculator-container__button-container">
+                        <button class="btn-primary" id="backspace" onclick="backspace()">Del</button>
+                    </div>
+                    <div class="calculator-container__button-container ml-4 mr-2">
+                        <button class="btn-primary" id="clear" onclick="clearButton()">C</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="calculator-container__button-container">
+                             <button class="btn-primary" onclick="setValue(7)">7</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(4)">4</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(1)">1</button>
+                        </div>           
+                         <div class="calculator-container__button-container">
+                              <button class="btn-primary" onclick="setValue(0)">0</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(8)">8</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(5)">5</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(2)">2</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setDecimal('.')">.</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(9)">9</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(6)">6</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="setValue(3)">3</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="equalClick()">=</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="oppClick(4)">/</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="oppClick(3)">X</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="oppClick(2)">-</button>
+                        </div>
+                        <div class="calculator-container__button-container">
+                            <button class="btn-primary" onclick="oppClick(1)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
 
 
 
